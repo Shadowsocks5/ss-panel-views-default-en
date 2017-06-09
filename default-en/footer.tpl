@@ -15,7 +15,7 @@
 					<li><a class="white-text" href="/user/logout">Exit</a></li>
 				{else}
 					<li><a class="white-text" href="/auth/login">Login</a></li>
-					<li><a class="white-text" href="/auth/register">注册</a></li>
+					<li><a class="white-text" href="/auth/register">Registered</a></li>
 				{/if}
 				</ul>
 			</div>
