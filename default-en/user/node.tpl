@@ -5,7 +5,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            节点列表
+            Node list
             <small>Node List</small>
         </h1>
     </section>
@@ -16,9 +16,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="callout callout-warning">
-                    <h4>注意!</h4>
-                    <p>请勿在任何地方公开节点地址！</p>
-                    <p>流量比例为0.5即使用1000MB按照500MB流量记录记录结算.</p>
+                    <h4>Notice</h4>
+                    <p>Do not open the node address anywhere</p>
+                    <p>The flow ratio is 0.5, that is, using 1000MB in accordance with the 500MB traffic record record settlement.</p>
                     {$msg}
                 </div>
             </div>
@@ -48,30 +48,30 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="nav nav-stacked">
-                                        <li><a href="./node/{$node->id}">节点地址 <span
+                                        <li><a href="./node/{$node->id}">Node address<span
                                                         class="pull-right badge bg-blue">{$node->server}</span></a></li>
-                                        <li><a href="./node/{$node->id}">连接端口 <span
+                                        <li><a href="./node/{$node->id}">Port<span
                                                         class="pull-right badge bg-aqua">{$user->port}</span></a></li>
-                                        <li><a href="./node/{$node->id}">加密方式 <span
+                                        <li><a href="./node/{$node->id}">Method<span
                                                         class="pull-right badge bg-green">{if $node->custom_method == 1} {$user->method} {else} {$node->method} {/if}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">负载: <span
+                                        <li><a href="./node/{$node->id}">Node load<span
                                                         class="pull-right badge bg-green">{$node->getNodeLoad()}</span></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="nav nav-stacked">
-                                        <li><a href="./node/{$node->id}">流量比例 <span
+                                        <li><a href="./node/{$node->id}">Traffic rate<span
                                                         class="pull-right badge bg-blue">{$node->traffic_rate}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">在线人数 <span
+                                        <li><a href="./node/{$node->id}">Online count<span
                                                         class="pull-right badge bg-aqua">{$node->getOnlineUserCount()}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">产生流量 <span
+                                        <li><a href="./node/{$node->id}">Traffic<span
                                                         class="pull-right badge bg-green">{$node->getTrafficFromLogs()}</span></a>
                                         </li>
-                                        <li><a href="./node/{$node->id}">Uptime: <span
+                                        <li><a href="./node/{$node->id}">Uptime<span
                                                         class="pull-right badge bg-green">{$node->getNodeUptime()}</span></a>
                                         </li>
                                     </ul>

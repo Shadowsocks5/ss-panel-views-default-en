@@ -57,15 +57,15 @@
 
                                 <p>
                                     {$user->email}
-                                    <small>加入时间：{$user->regDate()}</small>
+                                    <small>Register Date：{$user->regDate()}</small>
                                 </p>
                             </li>
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="/user/profile" class="btn btn-default btn-flat">个人信息</a>
+                                    <a href="/user/profile" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="/user/logout" class="btn btn-default btn-flat">退出</a>
+                                    <a href="/user/logout" class="btn btn-default btn-flat">Exit</a>
                                 </div>
                             </li>
                         </ul>
@@ -89,7 +89,7 @@
                 <div class="pull-left info">
                     <p>{$user->user_name}</p>
 
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
                 </div>
             </div>
 
@@ -97,45 +97,45 @@
             <ul class="sidebar-menu">
                 <li>
                     <a href="/user">
-                        <i class="fa fa-dashboard"></i> <span>用户中心</span>
+                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="/user/node">
-                        <i class="fa fa-sitemap"></i> <span>节点列表</span>
+                        <i class="fa fa-sitemap"></i> <span>Nodes</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="/user/profile">
-                        <i class="fa fa-user"></i> <span>我的信息</span>
+                        <i class="fa fa-user"></i> <span>Profile</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="/user/trafficlog">
-                        <i class="fa fa-history"></i> <span>流量记录</span>
+                        <i class="fa fa-history"></i> <span>Traffic Log</span>
                     </a>
                 </li>
 
 
                 <li>
                     <a href="/user/edit">
-                        <i class="fa  fa-pencil"></i> <span>修改资料</span>
+                        <i class="fa  fa-pencil"></i> <span>Profile Edit</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="/user/invite">
-                        <i class="fa fa-users"></i> <span>邀请好友</span>
+                        <i class="fa fa-users"></i> <span>Invite</span>
                     </a>
                 </li>
 
                 {if $user->isAdmin()}
                     <li>
                         <a href="/admin">
-                            <i class="fa fa-cog"></i> <span>管理面板</span>
+                            <i class="fa fa-cog"></i> <span>Admin Center</span>
                         </a>
                     </li>
                 {/if}

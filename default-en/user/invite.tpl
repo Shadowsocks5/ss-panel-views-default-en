@@ -5,8 +5,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            邀请
-            <small>Invite</small>
+            Invite
         </h1>
     </section>
 
@@ -16,7 +15,7 @@
             <div class="col-sm-12">
                 <div id="msg-error" class="alert alert-warning alert-dismissable" style="display:none">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <h4><i class="icon fa fa-warning"></i> 出错了!</h4>
+                    <h4><i class="icon fa fa-warning"></i>Error</h4>
 
                     <p id="msg-error-p"></p>
                 </div>
@@ -30,32 +29,32 @@
                     <div class="box-header">
                         <i class="fa fa-rocket"></i>
 
-                        <h3 class="box-title">邀请</h3>
+                        <h3 class="box-title">Invite</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <p>当前您可以生成<code>{$user->invite_num}</code>个邀请码。 </p>
+                        <p>Currently you can generate <code>{$user->invite_num}</code> invitation codes.</p>
                         {if $user->invite_num }
                         <div class="input-group">
-                            <input class="form-control" id="num" type="number" placeholder="要生成的邀请码数量">
+                            <input class="form-control" id="num" type="number" placeholder="Generate quantity">
                             <div class="input-group-btn">
-                                <button id="invite" class="btn btn-info">生成我的邀请码</button>
+                                <button id="invite" class="btn btn-info">Generate invitation code</button>
                             </div>
                         </div>
                         {/if}
                     </div>
                     <!-- /.box -->
                     <div class="box-header">
-                        <h3 class="box-title">我的邀请码</h3>
+                        <h3 class="box-title">Invitation code</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>###</th>
-                                <th>邀请码(点右键复制链接)</th>
-                                <th>状态</th>
+                                <th>ID</th>
+                                <th>Invitation code</th>
+                                <th>Status</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -64,7 +63,7 @@
                                     <td><b>{$code->id}</b></td>
                                     <td><a href="/auth/register?code={$code->code}" target="_blank">{$code->code}</a>
                                     </td>
-                                    <td>可用</td>
+                                    <td>Available</td>
                                 </tr>
                             {/foreach}
                             </tbody>
@@ -75,21 +74,21 @@
 
             <div class="col-md-6">
                 <div class="callout callout-warning">
-                    <h4>注意！</h4>
+                    <h4>Notice</h4>
 
-                    <p>邀请码请给认识的需要的人。</p>
+                    <p>Invitation code please give the person who needs to know.</p>
 
-                    <p>邀请有记录，若被邀请的人违反用户协议，您将会有连带责任。</p>
+                    <p>Invite a record, if the person you are invited to violate the user agreement, you will have joint and several liability.</p>
                 </div>
 
                 <div class="callout callout-info">
-                    <h4>说明</h4>
+                    <h4>Description</h4>
 
-                    <p>用户注册48小时后，才可以生成邀请码。</p>
+                    <p>After the user registers for 48 hours, the invitation code can be generated.</p>
 
-                    <p>邀请码暂时无法购买，请珍惜。</p>
+                    <p>Invitation code is temporarily unavailable.</p>
 
-                    <p>公共页面不定期发放邀请码，如果用完邀请码可以关注公共邀请。</p>
+                    <p>Public pages are sent from time to time to invite invitations, if the invitations can be used to pay attention to public invitations.</p>
                 </div>
             </div>
             <!-- /.col (right) -->
@@ -112,7 +111,7 @@
                     window.location.reload();
                 },
                 error: function (jqXHR) {
-                    alert("发生错误：" + jqXHR.status);
+                    alert("Error：" + jqXHR.status);
                 }
             })
         })
