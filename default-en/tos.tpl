@@ -3,33 +3,33 @@
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
     <div class="page-header">
-        <h1>用户协议 Terms of Service </h1>
+        <h1>Terms of Service</h1>
     </div>
-    <p>{$config["appName"]}，以下简称本站。</p>
-    <h3>隐私</h3>
+    <p>{$config["appName"]}，Hereinafter referred to as the site.</p>
+    <h3>Privacy</h3>
     <p>
         <ul>
-            <li>用户注册时候需要提供邮箱以及密码，并自行保管。邮箱为用户的唯一凭证。</li>
-            <li>本站会加密存储用户密码，尽量保证数据安全，但并不保证这些信息的绝对安全。</li>
+            <li>Users need to provide the mailbox and password, and their own custody. The mailbox is the only credential for the user.</li>
+            <li>This site will SHA256 encrypted storage user password, as far as possible to ensure data security, but does not guarantee the absolute security of these information.</li>
         </ul>
     </p>
 
-    <h3>使用条款</h3>
+    <h3>Terms of use</h3>
     <p>
         <ul>
-            <li>禁止使用本站服务进行任何违法恶意活动。</li>
-            <li>使用任何节点，需遵循节点所属国家的相关法律以及中国法律。</li>
-            <li>禁止滥用本站提供的服务。</li>
-            <li>对于免费用户，我们有权在不通知的情况下删除账户。</li>
-            <li>任何违法使用条款的用户，我们将会删除违规账户并没收使用本站服务的权利。</li>
+            <li>Prohibit the use of this site services for any illegal activities.</li>
+            <li>Use any node, subject to the laws of the country in which the node belongs, and Chinese law.</li>
+            <li>Prohibit the abuse of the services provided by this site.</li>
+            <li>For free users, we have the right to delete accounts without notice.</li>
+            <li>Any illegal use of the terms of the user, we will delete the illegal account and the right to use the site service.</li>
        </ul>
     </p>
 
-    <h3>其它</h3>
+    <h3>Other</h3>
     <p>
     <ul>
-        <li>本站仅限人类及猫注册使用。</li>
-        <li>TOS更新时用户需要遵守最新TOS。</li>
+        <li>This site is limited to human and cat registered use.</li>
+        <li>TOS update users need to comply with the latest TOS.</li>
     </ul>
     </p>
 
